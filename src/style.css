@@ -27,7 +27,7 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-color: rgb(232, 244, 254);
+  background-color: rgb(235, 238, 240);
   padding: 40px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
@@ -37,7 +37,7 @@ select {
   display: flex;
   justify-content: space-between;
   margin: 10px 0;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 1px dashed rgba(8, 75, 247, 0.2);
   padding: 30px 0;
 }
 
