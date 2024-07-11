@@ -15,7 +15,7 @@ function updateTime() {
     let NairobiTimeElement = NairobiElement.querySelector(".time");
     let NairobiTime = moment().tz("Africa/Nairobi");
 
-    NairobiDateElement.innerHTML = NairobiTime.format("MMMM Do YYYY");
+    NairobiDateElement.innerHTML = NairobiTime.format("MMMM  Do YYYY");
     NairobiTimeElement.innerHTML = NairobiTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
@@ -27,29 +27,30 @@ function updateTime() {
     let AccraTimeElement = AccraElement.querySelector(".time");
     let AccraTime = moment().tz("Africa/Accra");
 
-    AccraDateElement.innerHTML = AccraTime.format("MMMM Do YYYY");
+    AccraDateElement.innerHTML = AccraTime.format("MMMM  Do YYYY");
     AccraTimeElement.innerHTML = AccraTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 }
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   }
-  letcityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
     <div class="city">
                 <div>
-                    <h2>${cityTimeZone}</h2>
-                    <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
+                    <h2>${cityName}</h2>
+                    <div class="date">${cityTime.format("MMMM  Do YYYY")}</div>
                 </div>
                 <div class="time">${cityTime.format(
                   "h:mm:ss"
-                )}<small>${cityTime.format("A")}</div>
+                )} <small>${cityTime.format("A")}</div>
             </div>
   `;
 }

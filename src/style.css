@@ -1,3 +1,10 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(world.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 h1 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -5,13 +12,8 @@ h1 {
 }
 
 h2 {
-  margin: 0 0 10px;
-  font-size: 25px;
-}
-
-body {
-  background-color: azure;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 0 5px;
+  font-size: 28px;
 }
 
 select {
@@ -25,18 +27,18 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-color: aliceblue;
+  background-color: rgb(183, 217, 246);
   padding: 40px;
-  box-shadow: rgba(120, 120, 115, 0.2) 0px 10px 30px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
 }
 
 .city {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
-  border-bottom: 1px dashed burlywood;
-  padding: 20px 0;
+  margin: 10px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  padding: 30px 0;
 }
 
 .city:last-child {
@@ -48,25 +50,27 @@ select {
 }
 
 .time {
-  font-size: 44px;
+  font-size: 43px;
   font-weight: bold;
 }
 
 .time small {
-  font-size: 22px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 48px;
   vertical-align: middle;
 }
 
 a {
   text-decoration: none;
+  color: rgb(52, 3, 251);
 }
 
 strong {
-  color: darkcyan;
+  color: rgb(46, 6, 246);
 }
 
 footer {
+  padding-top: 40px;
   text-align: center;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.8);
