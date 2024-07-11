@@ -1,6 +1,6 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-image: url(world.jpeg);
+  background-image: url(earth-3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -27,7 +27,7 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-color: rgb(183, 217, 246);
+  background-color: rgb(232, 244, 254);
   padding: 40px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
